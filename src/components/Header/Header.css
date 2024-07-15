@@ -1,0 +1,55 @@
+.header-content{
+    min-height: 140vh;
+    background: url("../../images/sh.jpg") center/cover no-repeat;
+    flex-direction: column;
+    
+    
+  
+}
+.header-title{
+    padding-left: 17px;
+    padding-top: 15%;
+    font-size: 4rem;
+    margin: 0;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+.header-text{
+    margin-bottom: 2.8rem;
+    padding-left: 17px;
+    opacity: 0.9;
+    text-align: left;
+    padding-top: -0.2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.category-nav{
+    margin-left: 32px;
+    margin-top: 8px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.category-nav .nav-item{
+    margin-right: 16px;
+}
+
+.category-nav .nav-item .nav-link{
+    transition: var(--transition);
+}
+
+.category-nav .nav-item .nav-link:hover{
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.8rem; /* Adjust font size for smaller screens */
+        padding-top: 18%; /* Adjust padding for better spacing */
+    }
+}
+
+

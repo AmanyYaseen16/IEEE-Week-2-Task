@@ -1,0 +1,157 @@
+@import "../../App.css";
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar .brand-and-toggler .sidebar-show-btn{
+    margin-right: 12px;
+    transition: var(--transition);
+}
+
+.navbar .brand-and-toggler .sidebar-show-btn:hover{
+    opacity: 0.6;
+}
+
+.bar-content span{
+    margin-right: 3px;
+}
+
+.navbar .bar-brand{
+    font-size: 1.5rem;
+}
+.bar-brand span {
+    color: var(--dark_brown);
+}
+
+.navbar-collapse {
+    width: 100%;
+}
+
+.navbar-collapse .navbar-search {
+    padding: 1rem 1rem;
+    margin-left: 32px;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.search-elem .search-control{
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0 16px;    
+    flex-grow: 1;
+    background: transparent;
+}
+.search-elem .search-control::placeholder{
+    opacity: 0.8;
+    color: var(--white);
+}
+
+.search-elem .search-btn {
+    margin-right: 10px;
+}
+.search-elem .search-btn:hover{
+color: var(--white);
+}
+
+.navbar-icons {
+    gap:17px;
+}
+
+.navbar-cart{
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
+.navbar-cart .cart-btn{
+        position: relative;
+}
+
+.navbar-cart .cart-btn .cart-items-value{
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    background-color: var(--heavy_brown);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    padding: 0 0.5rem;
+    width: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 570px){
+    .navbar-collapse .navbar-search{
+        display: none;
+    }
+}
+
+.navbar-cons ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background: #876147;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+    
+.navbar-cons ul li:hover{
+        width: 115px;
+        background:#704530;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+.navbar-cons ul li i{
+        transition: var(--transition);
+        transition-delay: 0.25s;
+    }
+.navbar-cons ul li:hover i{
+        transform: scale(0);
+        color: #fff;
+        transition-delay: 0s;
+}
+    
+.navbar-cons ul li span{
+        position: absolute;
+    }
+    
+.navbar-cons ul li .title{
+        color: #fff;
+        align-items: center;
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        transform: scale(0);
+        transition: 0.4s;
+        transition-delay: 0ms;
+}
+    
+.navbar-cons ul li:hover .title{
+        transform: scale(1);
+        transition-delay: 0.20s;
+        text-align: center;
+}
+
+.cart-btn:hover .cart-modal{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+

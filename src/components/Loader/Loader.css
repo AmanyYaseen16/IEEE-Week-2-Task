@@ -1,0 +1,7 @@
+.loader {
+    justify-content: center;
+    align-items: center;
+}
+.loader img{
+    width:80px;
+}

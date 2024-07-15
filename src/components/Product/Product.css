@@ -1,0 +1,117 @@
+.product-item{
+    position:relative;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.05) 0px 2px 5px -1px, rgba(0, 0, 0, 0.05) 0px 1px 3px -1px;
+    transition: var(--transition);
+}
+
+.product-item .category{
+    position:absolute;
+    right: -5px;
+    top: 1.6rem;
+    background-color: var(--dark_brown);
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding: 0.2rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.product-item .category::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 100%;
+    transform: translateY(-5px);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid var(--dark_brown);
+}
+
+.product-item .pr-item-img{
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    height: 250px;
+    overflow: hidden!important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-item .pr-item-info{
+    padding: 0 12px 20px 12px;
+    text-align: center;
+    opacity: 0.8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+.product-item .pr-item-info .brand{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 0.6rem;
+} 
+
+.product-item .pr-item-info .brand span:first-child{
+    margin-right: 3px;
+} 
+
+.product-item .pr-item-info .title{
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding-top: 8px; 
+    padding-bottom: 8px;
+} 
+.product-item .pr-item-info .price{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+} 
+
+.product-item .pr-item-info .price .old-price{
+    opacity: 0.7;
+    text-decoration: line-through;
+    font-size: 12px;
+    padding-right: 8px;
+} 
+
+.product-item .pr-item-info .price .new-price{
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 16px;
+} 
+
+.product-item .pr-item-info .price .discount{
+    font-size: 13px;
+    font-weight: 600;
+    color: darken(#704530, 5%);
+} 
+
+.product-item .pr-item-info .price::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 6px);
+    height: 1px;
+    background-color: lighten(#704530, 10%);
+    width: 60px;
+}
+
+.product-item:hover{
+    box-shadow: rgba(50, 50, 93, 0.4) 0px 2px 5px -1px, rgba(0, 0, 0, 0.4) 0px 1px 20px -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
