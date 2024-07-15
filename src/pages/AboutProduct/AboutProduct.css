@@ -1,0 +1,204 @@
+@import '../../App.css';
+
+.main-form{
+    background-color: whitesmoke;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.main-form .single-product .single-product-content{
+    row-gap: 2rem;
+    padding: 12px;
+}
+
+@media screen and (min-width: 768px){
+    .main-form .single-product .single-product-content{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    }
+}
+
+.main-form .single-product .single-product-content .single-product-l .product-img .product-img-zoom{
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-img-thumbs{
+    overflow-x: scroll;
+    margin-top: 8px; 
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.product-img-thumbs::-webkit-scrollbar{
+    height: 5px;
+}
+
+.product-img-thumbs::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-img-thumbs::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: lighten(#704530, 5%);
+    outline: 1px solid #704530;
+}
+
+.product-img-thumbs .thumb-item{
+    margin: 0 5px;
+    height: 120px;
+    border: 2px solid var(--white);
+    transition: var(--transition);
+}
+
+.product-img-thumbs .thumb-item img{
+    transition: var(--transition);
+}
+
+.product-img-thumbs .thumb-item img:first-child{
+    margin-left: 0;
+}
+
+.product-img-thumbs .thumb-item img:last-child{
+    margin-right: 0;
+}
+
+.product-img-thumbs .thumb-item img:hover{
+    border-color: var(--dark_brown);
+}
+
+.product-img-thumbs .thumb-item img img{
+    transform: scale(0.9);
+}
+
+.main-form .single-product .single-product-conten .single-product-r {
+    margin-top: 2rem;
+}
+
+.single-product-r .product-details .title{
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--light_gray);
+}
+
+.single-product-r .product-details .parag{
+    margin: 1rem 0;
+    opacity: 0.9;
+}
+
+.single-product-r .product-details .info{
+    margin-bottom: 1.6rem;
+}
+
+.single-product-r .product-details .price{
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 2rem;
+}
+
+.single-product-r .product-details .price .old-price{
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 2rem;
+    color: var(--light_gray);
+}
+
+.single-product-r .product-details .price .discount{
+    padding: 0 0.8rem;
+    border-radius: 3px;
+    margin-left: 8px;
+    margin-top: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--light_brown);  
+}
+
+.single-product-r .product-details .qty .qty-change {
+    margin-left: 16px; 
+    margin-right: 16px;
+}
+
+.single-product-r .product-details .qty .qty-change .qty-increase{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.single-product-r .product-details .qty .qty-change .qty-decrease{
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.single-product-r .product-details .qty .qty-change .qty-value{
+    width: 45px;
+    height: 28px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.single-product-r .product-details .qty .qty-error{
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 8px; 
+    margin-right: 8px;
+    background-color: #704530;
+}
+
+.single-product-r .product-details .btns .btn{
+    height: 46px;
+    font-size: 15px;
+    border: 1px solid var(--dark_brown);
+    padding: 0 1.8rem;
+    transition: var(--transition);
+    margin-left: 16px; 
+    margin-right: 16px;
+    border-radius: 60px;
+}
+
+.single-product-r .product-details .btns .btn-text{
+    text-transform: capitalize;
+    margin-left: 8px; 
+    margin-right: 8px;
+}
+
+.single-product-r .product-details .btns .btn:first-child{
+    background-color: #FFEEE8;
+    color: var(--dark_brown);
+    margin-left: 8px; 
+    margin-right: 8px;
+}
+.single-product-r .product-details .btns .btn:last-child{
+    background-color: var(--dark_brown);
+    color: white;
+    margin-left: 16px; 
+    margin-right: 16px;
+}
+.single-product-r .product-details .btns .btn:hover{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
